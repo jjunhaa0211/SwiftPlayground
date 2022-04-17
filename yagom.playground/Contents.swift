@@ -56,13 +56,30 @@ import Darwin
 
 
 //float and double
+//
+//var floatValue: Float = 1234567890.1
+//
+//let doubleValue: Double = 1234567890.1
+//
+//print("floatValue : \(floatValue) doubleValue : \(doubleValue)")
+//
+//floatValue = 123456.1
+//
+//print(floatValue)
 
-var floatValue: Float = 1234567890.1
+//Int.random(in: -100...100)
+//UInt.random(in: 1...30)
+//Double.random(in: 1.5...1.5)
+//Float.random(in: -0.5...1.5)
+//
 
-let doubleValue: Double = 1234567890.1
 
-print("floatValue : \(floatValue) doubleValue : \(doubleValue)")
+let alphabetA: Character = "A"
+print(alphabetA)
 
-floatValue = 123456.1
+let commandCharacter: Character = "❤️"
+let 한글변수이름:Character = "ㄱ"
 
-print(floatValue)
+print("\(commandCharacter)")
+print("\(한글변수이름)")
+
