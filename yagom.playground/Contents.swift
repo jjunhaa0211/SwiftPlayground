@@ -21,11 +21,27 @@
 //print("저의 이름은 \(name)입니다, 그리고 저의 나이는 \(age)이며 저의 신분은 \(job)입니다. 정말 비밀이지만 말씀드리면 저의 키는 \(higth)입니다")
 
 
-//let 상수
-let name:String = "yagom"
-var age: Int = 100
-var job = "IOS Programmer"
-let height = 181.5
-age = 99
-job = "Wrinter"
-print("저의 이름은 \(name)이고, 나이는\(age)세이면, 직업은 \(job)입니다. 비밀이지만, 키는 \(height)입니다.")
+////let 상수
+//let name:String = "yagom"
+//var age: Int = 100
+//var job = "IOS Programmer"
+//let height = 181.5
+//age = 99
+//job = "Wrinter"
+//print("저의 이름은 \(name)이고, 나이는\(age)세이면, 직업은 \(job)입니다. 비밀이지만, 키는 \(height)입니다.")
+
+
+//Int 와 UInt
+
+var integer: Int = -100
+let unsignedIntteger: UInt = 50   // 음수 불가능 = UInt
+print("integer 값: \(integer),unsigndInteger 값: \(unsignedIntteger)")
+print("Int 최댓값: \(Int.max), Int 최솟값: \(Int.min)")
+print("Int 최댓값: \(UInt.max), Int 최솟값: \(UInt.min)")
+let largeInteger: Int64 = Int64.max
+let smallUnsignedInteger: UInt8 = UInt8.max
+print("Int64 최댓값: \(largeInteger), UInt8 최댓값: \(smallUnsignedInteger)")
+
+//let tooLarge: Int = Int.max + 1
+//let cannotBeNegetive: UInt = -5
+
