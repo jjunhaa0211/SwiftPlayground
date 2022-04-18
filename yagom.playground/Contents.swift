@@ -114,7 +114,7 @@ var isSameString: Bool = true
 isSameString = hello == "Hello"
 print(isSameString)
 
-  
+
 
 
 
@@ -148,4 +148,19 @@ print(hasSuffix)
 
 hasSuffix = yagom.hasSuffix("gom")
 print(hasSuffix)
+
+var convertedString: String = ""
+convertedString = hello.uppercased()
+print(convertedString)
+
+convertedString = hello.lowercased()
+print(convertedString)
+
+
+let junha: String = "junha"
+convertedString = junha.uppercased()
+print(convertedString)
+
+convertedString = junha.lowercased()
+print(convertedString)
 
