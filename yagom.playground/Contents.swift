@@ -95,101 +95,120 @@ import Darwin
 //print("name의 글자 수: \(name.count)")
 //print("introduce가 비어있습니까?: \(introduce.isEmpty)")
 //
-let unicodeScalarValue: String = "\u{2665}"
-let hello: String = "Hello"
-let yagom: String = "yagom"
-var greeting: String = hello + " " + yagom + "!"
-print(greeting)
+//let unicodeScalarValue: String = "\u{2665}"
+//let hello: String = "Hello"
+//let yagom: String = "yagom"
+//var greeting: String = hello + " " + yagom + "!"
+//print(greeting)
+//
+//greeting = hello
+//greeting += " "
+//greeting += yagom
+//greeting += "!"
+//print(greeting)
+//
+//
+/////연산자
+//var isSameString: Bool = true
+//
+//isSameString = hello == "Hello"
+//print(isSameString)
+//
+//
+//
+//
+//
+/////메서드를 통한 접두어, 접미어 확인
+//
+//var hasPrefix: Bool = false
+//hasPrefix = hello.hasPrefix("He")
+//print(hasPrefix)
+//
+//hasPrefix = hello.hasPrefix("HE")
+//print(hasPrefix)
+//
+//hasPrefix = greeting.hasPrefix("Hello ")
+//print(hasPrefix)
+//
+//hasPrefix = yagom.hasPrefix("gom")
+//print(hasPrefix)
+//
+//hasPrefix = hello.hasPrefix("hello")
+//print(hasPrefix)
+//
+//var hasSuffix: Bool = false
+//hasSuffix = hello.hasPrefix("He")
+//print(hasSuffix)
+//
+//hasSuffix = hello.hasSuffix("llo")
+//print(hasSuffix)
+//
+//hasSuffix = greeting.hasSuffix("yagom! ")
+//print(hasSuffix)
+//
+//hasSuffix = yagom.hasSuffix("gom")
+//print(hasSuffix)
+//
+//var convertedString: String = ""
+//convertedString = hello.uppercased()
+//print(convertedString)
+//
+//convertedString = hello.lowercased()
+//print(convertedString)
+//
+//
+//let junha: String = "junha"
+//convertedString = junha.uppercased()
+//print(convertedString)
+//
+//convertedString = junha.lowercased()
+//print(convertedString)
+//
+//convertedString = yagom.uppercased()
+//print(convertedString)
+//
+//convertedString = greeting.uppercased()
+//print(convertedString)
+//
+//var isEmptyString: Bool = false
+//isEmptyString = greeting.isEmpty
+//print(isEmptyString)
+//
+//greeting = "안녕"
+//isEmptyString = greeting.isEmpty
+//print(isEmptyString)
+//
+//greeting = ""
+//isEmptyString = greeting.isEmpty
+//print(isEmptyString)
+//
+//greeting = "안녕하세요"
+//print(greeting.count)
+//
+//greeting = "안녕!"
+//print(greeting.count)
+//
+//greeting = "죄송합니다..."
+//print(greeting.count)
+//
+//greeting = "sorry"
+//print(greeting.count)
+//
+//var someVer: Any = "yagom"
+//print("hello \(someVer)")
 
-greeting = hello
-greeting += " "
-greeting += yagom
-greeting += "!"
-print(greeting)
+typealias MyInt = Int
+typealias YourInt = Int
+typealias MyDouble = Double
 
+let age: MyInt = 100
+var year: YourInt = 2080
 
-///연산자
-var isSameString: Bool = true
+year = age
+print(year)
 
-isSameString = hello == "Hello"
-print(isSameString)
-
-
+let manth: Int = 7
+let percentage: MyDouble = 99.9
 
 
 
-///메서드를 통한 접두어, 접미어 확인
-
-var hasPrefix: Bool = false
-hasPrefix = hello.hasPrefix("He")
-print(hasPrefix)
-
-hasPrefix = hello.hasPrefix("HE")
-print(hasPrefix)
-
-hasPrefix = greeting.hasPrefix("Hello ")
-print(hasPrefix)
-
-hasPrefix = yagom.hasPrefix("gom")
-print(hasPrefix)
-
-hasPrefix = hello.hasPrefix("hello")
-print(hasPrefix)
-
-var hasSuffix: Bool = false
-hasSuffix = hello.hasPrefix("He")
-print(hasSuffix)
-
-hasSuffix = hello.hasSuffix("llo")
-print(hasSuffix)
-
-hasSuffix = greeting.hasSuffix("yagom! ")
-print(hasSuffix)
-
-hasSuffix = yagom.hasSuffix("gom")
-print(hasSuffix)
-
-var convertedString: String = ""
-convertedString = hello.uppercased()
-print(convertedString)
-
-convertedString = hello.lowercased()
-print(convertedString)
-
-
-let junha: String = "junha"
-convertedString = junha.uppercased()
-print(convertedString)
-
-convertedString = junha.lowercased()
-print(convertedString)
-
-convertedString = yagom.uppercased()
-print(convertedString)
-
-convertedString = greeting.uppercased()
-print(convertedString)
-
-var isEmptyString: Bool = false
-isEmptyString = greeting.isEmpty
-print(isEmptyString)
-
-greeting = "안녕"
-isEmptyString = greeting.isEmpty
-print(isEmptyString)
-
-greeting = ""
-isEmptyString = greeting.isEmpty
-print(isEmptyString)
-
-greeting = "안녕하세요"
-print(greeting.count)
-
-greeting = "안녕!"
-print(greeting.count)
-
-greeting = "죄송합니다..."
-print(greeting.count)
-
-greeting = "sorry"
-print(greeting.count)
