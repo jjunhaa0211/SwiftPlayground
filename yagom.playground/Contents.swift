@@ -74,12 +74,26 @@ import Darwin
 //
 
 
-let alphabetA: Character = "A"
-print(alphabetA)
+//let alphabetA: Character = "A"
+//print(alphabetA)
+//
+//let commandCharacter: Character = "❤️"
+//let 한글변수이름:Character = "ㄱ"
+//
+//print("\(commandCharacter)")
+//print("\(한글변수이름)")
 
-let commandCharacter: Character = "❤️"
-let 한글변수이름:Character = "ㄱ"
+let name: String = "yagom"
 
-print("\(commandCharacter)")
-print("\(한글변수이름)")
+var introduce: String = String()
+
+introduce.append("제 이름은")
+
+introduce = introduce + " " + name + "입니다."
+
+print(introduce)
+print("name의 글자 수: \(name.count)")
+print("introduce가 비어있습니까?: \(introduce.isEmpty)")
+
+let unicodeScalarValue: String = "\u{2665}"
 
