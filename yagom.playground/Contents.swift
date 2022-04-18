@@ -197,18 +197,34 @@ import Darwin
 //var someVer: Any = "yagom"
 //print("hello \(someVer)")
 
-typealias MyInt = Int
-typealias YourInt = Int
-typealias MyDouble = Double
+//typealias MyInt = Int
+//typealias YourInt = Int
+//typealias MyDouble = Double
+//
+//let age: MyInt = 100
+//var year: YourInt = 2080
+//
+//year = age
+//print(year)
+//
+//let manth: Int = 7
+//let percentage: MyDouble = 99.9
 
-let age: MyInt = 100
-var year: YourInt = 2080
+var person: (String, Int, Double) = ("yagom",100,182.5)
+print(person)
 
-year = age
-print(year)
+print("이름: \(person.0),나이: \(person.1), 신장: \(person.2)")
 
-let manth: Int = 7
-let percentage: MyDouble = 99.9
+person.1 = 99
+person.2 = 178.5
 
+print("이름: \(person), 나이: \(person), 신장: \(person.2)")
 
+typealias PersonTuple = (name: String, age: Int, height: Double)
+
+let yagom: PersonTuple = ("yagom",100,178.5)
+let eric: PersonTuple = ("eric",150,183.5)
+
+print("이름: \(yagom.name), 나이: \(yagom.age), 신장 \(yagom.height)")
+print("이름: \(eric.name), 나이: \(yagom.age), 신장 \(yagom.height)")
 
