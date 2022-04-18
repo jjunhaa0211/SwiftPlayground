@@ -4,18 +4,18 @@
 
 import Darwin
 
-//변수
+///변수
 //var name : String = "yagom"
 //var age: Int = 100
 //var job = "IOS Programmer"
 //var height = 181.5
-////print("\(type(of: ))") = 변수 타입을 확인 할 수 있다
+//print("\(type(of: ))") = 변수 타입을 확인 할 수 있다
 //age = 99
 //job = "Writer"
 //
 //print("저의 이름은 \(name)이고, 나이는 \(age)세이며, 직업은 \(job)입니다. 비밀이지만, 키는 \(height)센티미터입니다.")
 
-//변수 활용
+///변수 활용
 //var name : String = "junha park"
 //var age: Int = 17;
 //var job = "student"
@@ -23,7 +23,7 @@ import Darwin
 //print("저의 이름은 \(name)입니다, 그리고 저의 나이는 \(age)이며 저의 신분은 \(job)입니다. 정말 비밀이지만 말씀드리면 저의 키는 \(higth)입니다")
 
 
-////let 상수
+///let 상수
 //let name:String = "yagom"
 //var age: Int = 100
 //var job = "IOS Programmer"
@@ -33,7 +33,7 @@ import Darwin
 //print("저의 이름은 \(name)이고, 나이는\(age)세이면, 직업은 \(job)입니다. 비밀이지만, 키는 \(height)입니다.")
 
 
-//Int 와 UInt
+///Int 와 UInt
 
 //var integer: Int = -100
 //let unsignedIntteger: UInt = 50   // 음수 불가능 = UInt
@@ -108,7 +108,7 @@ greeting += "!"
 print(greeting)
 
 
-//연산자
+///연산자
 var isSameString: Bool = true
 
 isSameString = hello == "Hello"
@@ -118,7 +118,7 @@ print(isSameString)
 
 
 
-//메서드를 통한 접두어, 접미어 확인
+///메서드를 통한 접두어, 접미어 확인
 
 var hasPrefix: Bool = false
 hasPrefix = hello.hasPrefix("He")
@@ -164,3 +164,32 @@ print(convertedString)
 convertedString = junha.lowercased()
 print(convertedString)
 
+convertedString = yagom.uppercased()
+print(convertedString)
+
+convertedString = greeting.uppercased()
+print(convertedString)
+
+var isEmptyString: Bool = false
+isEmptyString = greeting.isEmpty
+print(isEmptyString)
+
+greeting = "안녕"
+isEmptyString = greeting.isEmpty
+print(isEmptyString)
+
+greeting = ""
+isEmptyString = greeting.isEmpty
+print(isEmptyString)
+
+greeting = "안녕하세요"
+print(greeting.count)
+
+greeting = "안녕!"
+print(greeting.count)
+
+greeting = "죄송합니다..."
+print(greeting.count)
+
+greeting = "sorry"
+print(greeting.count)
