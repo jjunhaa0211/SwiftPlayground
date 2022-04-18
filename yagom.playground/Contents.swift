@@ -95,7 +95,7 @@ import Darwin
 //print("name의 글자 수: \(name.count)")
 //print("introduce가 비어있습니까?: \(introduce.isEmpty)")
 //
-//let unicodeScalarValue: String = "\u{2665}"
+let unicodeScalarValue: String = "\u{2665}"
 let hello: String = "Hello"
 let yagom: String = "yagom"
 var greeting: String = hello + " " + yagom + "!"
@@ -113,4 +113,39 @@ var isSameString: Bool = true
 
 isSameString = hello == "Hello"
 print(isSameString)
+
+  
+
+
+
+//메서드를 통한 접두어, 접미어 확인
+
+var hasPrefix: Bool = false
+hasPrefix = hello.hasPrefix("He")
+print(hasPrefix)
+
+hasPrefix = hello.hasPrefix("HE")
+print(hasPrefix)
+
+hasPrefix = greeting.hasPrefix("Hello ")
+print(hasPrefix)
+
+hasPrefix = yagom.hasPrefix("gom")
+print(hasPrefix)
+
+hasPrefix = hello.hasPrefix("hello")
+print(hasPrefix)
+
+var hasSuffix: Bool = false
+hasSuffix = hello.hasPrefix("He")
+print(hasSuffix)
+
+hasSuffix = hello.hasSuffix("llo")
+print(hasSuffix)
+
+hasSuffix = greeting.hasSuffix("yagom! ")
+print(hasSuffix)
+
+hasSuffix = yagom.hasSuffix("gom")
+print(hasSuffix)
 
