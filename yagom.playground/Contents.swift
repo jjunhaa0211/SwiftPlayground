@@ -83,17 +83,34 @@ import Darwin
 //print("\(commandCharacter)")
 //print("\(한글변수이름)")
 
-let name: String = "yagom"
+//let name: String = "yagom"
+//
+//var introduce: String = String()
+//
+//introduce.append("제 이름은")
+//
+//introduce = introduce + " " + name + "입니다."
+//
+//print(introduce)
+//print("name의 글자 수: \(name.count)")
+//print("introduce가 비어있습니까?: \(introduce.isEmpty)")
+//
+//let unicodeScalarValue: String = "\u{2665}"
+let hello: String = "Hello"
+let yagom: String = "yagom"
+var greeting: String = hello + " " + yagom + "!"
+print(greeting)
 
-var introduce: String = String()
+greeting = hello
+greeting += " "
+greeting += yagom
+greeting += "!"
+print(greeting)
 
-introduce.append("제 이름은")
 
-introduce = introduce + " " + name + "입니다."
+//연산자
+var isSameString: Bool = true
 
-print(introduce)
-print("name의 글자 수: \(name.count)")
-print("introduce가 비어있습니까?: \(introduce.isEmpty)")
-
-let unicodeScalarValue: String = "\u{2665}"
+isSameString = hello == "Hello"
+print(isSameString)
 
