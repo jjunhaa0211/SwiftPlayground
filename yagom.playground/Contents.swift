@@ -250,20 +250,33 @@ import Foundation
 //var nameberForName: [String: Int] = ["yagom": 100,"chulsoo": 200,"jenny": 300]
 //
 //print("numberFor")
-
-let first: Int = 5
-let second: Int = 7
-
-if first > second{
-    print("first > second")
-}
-else if first < second {
-    print("first < second")
-}
-else{
-    print("first == second")
-}
+//
+//let first: Int = 5
+//let second: Int = 7
+//
+//if (first > second){
+//    print("first > second")
+//}
+//else if (first < second) {
+//    print("first < second")
+//}
+//else{
+//    print("first == second")
+//}
 
 // 결과는 "first < second"가 출력됩니다.
 
+let first: Int = 5
+let second: Int = 5
+var biggerValue: Int = 0
 
+if first > second {
+    biggerValue = first
+} else if first == second {
+    biggerValue = first
+} else if first < second {
+    biggerValue = second
+} else if first == 5 {
+    biggerValue = 100
+}
+print(biggerValue)
