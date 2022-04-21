@@ -3,6 +3,7 @@
 //print("MY name is \(name)")  //변수나 상수를 집어 넣을 때 c언어는 %d를 쓰지만 swift는 \(변수,상수)를 사용한다
 
 import Darwin
+import Foundation
 
 ///변수
 //var name : String = "yagom"
@@ -193,10 +194,10 @@ import Darwin
 //
 //greeting = "sorry"
 //print(greeting.count)
-//
+
 //var someVer: Any = "yagom"
 //print("hello \(someVer)")
-
+//
 //typealias MyInt = Int
 //typealias YourInt = Int
 //typealias MyDouble = Double
@@ -209,22 +210,60 @@ import Darwin
 //
 //let manth: Int = 7
 //let percentage: MyDouble = 99.9
+//
+//var person: (String, Int, Double) = ("yagom",100,182.5)
+//print(person)
+//
+//print("이름: \(person.0),나이: \(person.1), 신장: \(person.2)")
+//
+//person.1 = 99
+//person.2 = 178.5
+//
+//print("이름: \(person), 나이: \(person), 신장: \(person.2)")
+//
+//typealias PersonTuple = (name: String, age: Int, height: Double)
+//
+//let yagom: PersonTuple = ("yagom",100,178.5)
+//let eric: PersonTuple = ("eric",150,183.5)
+//
+//print("이름: \(yagom.name), 나이: \(yagom.age), 신장 \(yagom.height)")
+//print("이름: \(eric.name), 나이: \(yagom.age), 신장 \(yagom.height)")
+//
+//
+//var names: Array<String> = ["yagom","chulsoo","younghee","yagom"]
+//
+///var names: [String] = ["yagom","chulsoo","younghee","yagom"]
+//
+//var emptyArray: [Any] = [Any]()
+//
+//var emptyArray: [Any] = Array<Any>()
+//
+//print(name[2])
+//name[2] = "jenny"
+//print(name[2])
+//print(name[4])
+//
+//typealias StringIntDictionary = [String: Int]
+//var numberForName: Dictionary<String, Int> = Dictionary<String, Int>()
+////=====================================================================
+//
+//var nameberForName: [String: Int] = ["yagom": 100,"chulsoo": 200,"jenny": 300]
+//
+//print("numberFor")
 
-var person: (String, Int, Double) = ("yagom",100,182.5)
-print(person)
+let first: Int = 5
+let second: Int = 7
 
-print("이름: \(person.0),나이: \(person.1), 신장: \(person.2)")
+if first > second{
+    print("first > second")
+}
+else if first < second {
+    print("first < second")
+}
+else{
+    print("first == second")
+}
 
-person.1 = 99
-person.2 = 178.5
+// 결과는 "first < second"가 출력됩니다.
 
-print("이름: \(person), 나이: \(person), 신장: \(person.2)")
-
-typealias PersonTuple = (name: String, age: Int, height: Double)
-
-let yagom: PersonTuple = ("yagom",100,178.5)
-let eric: PersonTuple = ("eric",150,183.5)
-
-print("이름: \(yagom.name), 나이: \(yagom.age), 신장 \(yagom.height)")
-print("이름: \(eric.name), 나이: \(yagom.age), 신장 \(yagom.height)")
 
