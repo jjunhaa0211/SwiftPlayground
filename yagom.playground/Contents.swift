@@ -2,9 +2,6 @@
 //let name:String = "yagom"
 //print("MY name is \(name)")  //변수나 상수를 집어 넣을 때 c언어는 %d를 쓰지만 swift는 \(변수,상수)를 사용한다
 
-import Darwin
-import Foundation
-
 ///변수
 //var name : String = "yagom"
 //var age: Int = 100
@@ -265,18 +262,42 @@ import Foundation
 //}
 
 // 결과는 "first < second"가 출력됩니다.
+//
+//let first: Int = 5
+//let second: Int = 5
+//var biggerValue: Int = 0
+//
+//if first > second {
+//    biggerValue = first
+//} else if first == second {
+//    biggerValue = first
+//} else if first < second {
+//    biggerValue = second
+//} else if first == 5 {
+//    biggerValue = 100
+//}
+//print(biggerValue)
 
-let first: Int = 5
-let second: Int = 5
+//let fitst: Int = 5
+//let second: Int = 5
+//var biggerValue: Int = 0
+//
+//if(fitst > second) {
+//    biggerValue = fitst
+//} else if (fitst == second) {
+//    biggerValue = fitst
+//} else if (fitst < second) {
+//    biggerValue = second
+//} else if (fitst == 5) {
+//    biggerValue = 100
+//}
+//
+//print(biggerValue)
+//
+
+let first: Int = 15
+let second: Int = 10
 var biggerValue: Int = 0
 
-if first > second {
-    biggerValue = first
-} else if first == second {
-    biggerValue = first
-} else if first < second {
-    biggerValue = second
-} else if first == 5 {
-    biggerValue = 100
-}
-print(biggerValue)
+biggerValue = first > second ? first : second
+print("\(biggerValue)")
