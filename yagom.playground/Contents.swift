@@ -295,9 +295,23 @@
 //print(biggerValue)
 //
 
-let first: Int = 15
-let second: Int = 10
-var biggerValue: Int = 0
+//let first: Int = 15
+//let second: Int = 10
+//var biggerValue: Int = 0
+//
+//biggerValue = first > second ? first : second
+//print("\(biggerValue)")
 
-biggerValue = first > second ? first : second
-print("\(biggerValue)")
+
+let number1: Int = 6
+
+switch number1 {
+case 1:
+    print("원하지 않는 값")
+    break
+case 5...10:
+    print("원하는 값")
+    break
+default:
+    print("아무 것도 아님")
+}
