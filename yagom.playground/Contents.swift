@@ -303,15 +303,34 @@
 //print("\(biggerValue)")
 
 
-let number1: Int = 6
+//let number1: Int = 6
+//
+//switch number1 {
+//case 1:
+//    print("원하지 않는 값")
+//    break
+//case 5...10:
+//    print("원하는 값")
+//    break
+//default:
+//    print("아무 것도 아님")
+//}
 
-switch number1 {
+let integerValue: Int = 5
+
+switch integerValue {
 case 1:
-    print("원하지 않는 값")
+    print("Value == zero")
+    
+case 1...10:
+    print("Value == 1~10")
+    fallthrough
+    
+case Int.min..<0, 101..<Int.max:
+    print("Value < 0 or Value > 100")
     break
-case 5...10:
-    print("원하는 값")
-    break
+    
 default:
-    print("아무 것도 아님")
+    print("10 < Value <= 100")
+    
 }
