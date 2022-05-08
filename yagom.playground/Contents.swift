@@ -345,25 +345,30 @@
 //default:
 //    print("Value == \(doubleValue)")
 //}
-struct BasicInformation{
-    let name: String
-    var age: Int
-}
-var yagomInfo = BasicInformation(name: "yagom",age: 99)
+//struct BasicInformation{
+//    let name: String
+//    var age: Int
+//}
+//var yagomInfo = BasicInformation(name: "yagom",age: 99)
+//
+//class person {
+//    var height: Float = 0.0
+//    var weight: Float = 0.0
+//}
+//
+//let yagom: person = person()
+//yagom.height = 182.5
+//yagom.weight = 78.5
+//
+//print(yagomInfo)
+//dump(yagomInfo)
+//
+//print(yagom)
+//
+//dump(yagom)
+//
+var name: String = "junha"
+var age: Int = 17
+var jub: String = "student"
 
-class person {
-    var height: Float = 0.0
-    var weight: Float = 0.0
-}
-
-let yagom: person = person()
-yagom.height = 182.5
-yagom.weight = 78.5
-
-print(yagomInfo)
-dump(yagomInfo)
-
-print(yagom)
-
-dump(yagom)
-
+print("저의 이름은\(name), 저의 나이는 \(age)입니다, 그리고 저의 직업은 \(jub)입니다")
