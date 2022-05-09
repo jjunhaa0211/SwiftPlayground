@@ -395,7 +395,47 @@ import Foundation
 //exproject.toggle()
 //print(exproject)
 
-var apple: String = "apple"
-var temp: String = String()
-temp = apple.uppercased()
-print(temp)
+//var apple: String = "apple"
+//var temp: String = String()
+//temp = apple.uppercased()
+//print(temp)
+
+//var apple: String = "ApPle"
+//var temp: String = String()
+//temp = apple.lowercased()
+//print(temp)
+
+//var someVar: Any = "junha"
+//someVar = 50
+//print(someVar)
+//someVar = 100.1
+//print(someVar)
+//someVar = "junha"
+//print(someVar)
+//someVar = 10.12344565
+//print(someVar)
+
+//var person: (name: String, age: Int, height: Double) = ("junha",17,171.1)
+//
+//print("이름: \(person.name),나이: \(person.age),신장: \(person.height)")
+//
+//person.age = 18
+//person.2 = 175.2
+//
+//print("이름: \(person.name),나이: \(person.1), 신장: \(person.2)")
+
+//typealias personTyple = (name: String, age: Int, height: Double)
+//
+//let junha: personTyple = ("junha",17,171.1)
+//let eric: personTyple = ("eric",150,183.3)
+//
+//print("name:\(junha.name),age:\(junha.age),height:\(junha.height)")
+//print("name:\(eric.0),age:\(eric.1),height:\(eric.2)")
+//
+
+var valueA: Int = 3
+var valueB: Int = 5
+var BiggerValue = (valueA > valueB) ? valueA : valueB
+print("\(BiggerValue)")
+
+
