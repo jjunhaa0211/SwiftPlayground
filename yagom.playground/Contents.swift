@@ -2,6 +2,8 @@
 //let name:String = "yagom"
 //print("MY name is \(name)")  //변수나 상수를 집어 넣을 때 c언어는 %d를 쓰지만 swift는 \(변수,상수)를 사용한다
 
+import Foundation
+
 ///변수
 //var name : String = "yagom"
 //var age: Int = 100
@@ -367,8 +369,33 @@
 //
 //dump(yagom)
 //
-var name: String = "junha"
-var age: Int = 17
-var jub: String = "student"
+//var name: String = "junha"
+//var age: Int = 17
+//var jub: String = "student"
+//
+//print("저의 이름은\(name), 저의 나이는 \(age)입니다, 그리고 저의 직업은 \(jub)입니다")
 
-print("저의 이름은\(name), 저의 나이는 \(age)입니다, 그리고 저의 직업은 \(jub)입니다")
+//let name: String = "junha"
+//var introduce: String = String()
+//
+//introduce.append("제 이름은")
+//
+//introduce = introduce + " " + name + "입니다."
+//print(introduce)
+//
+//print("name의 글자 수: \(name.count)")
+//
+//print("introduce가 비어있습니다?: \(introduce.isEmpty)")
+//
+//let unicideScakarVakueL: String = "\u{2665}"
+//print(unicideScakarVakueL)
+
+//var exproject = false
+//print(exproject)
+//exproject.toggle()
+//print(exproject)
+
+var apple: String = "apple"
+var temp: String = String()
+temp = apple.uppercased()
+print(temp)
