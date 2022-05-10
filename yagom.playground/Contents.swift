@@ -452,17 +452,40 @@ import Darwin
 //        }
 //    }
 //}
-let IntNumber1: Int = 2;
-let IntNumber2: Int = 3;
-let IntNumber3: Int = 0;
-var Temp: Int = 0;
-if(IntNumber1 > IntNumber2 ){
-    Temp = (IntNumber2 > IntNumber3) ? IntNumber2 : IntNumber3
+//let IntNumber1: Int = 2;
+//let IntNumber2: Int = 3;
+//let IntNumber3: Int = 0;
+//var Temp: Int = 0;
+//if(IntNumber1 > IntNumber2 ){
+//    Temp = (IntNumber2 > IntNumber3) ? IntNumber2 : IntNumber3
+//}
+//else if(IntNumber2 > IntNumber1){
+//    Temp = (IntNumber1 > IntNumber3) ? IntNumber1 : IntNumber3
+//}
+//else{
+//    Temp = (IntNumber1 > IntNumber2) ? IntNumber1 : IntNumber2
+//}
+//print(Temp)
+//let first: Int = 3
+//let second: Int = 1
+//
+//if(first > second){
+//    print("\(first) > \(second)")
+//}
+//    else if(first < second){
+//        print("\(first) < \(second)")
+//    }else{
+//        print("\(first) == \(second)")
+//    }
+let SwiftSwitch: Int = 1;
+
+switch(SwiftSwitch){
+case 1:
+    print("hello")
+case 2:
+    print("hi")
+case 3:
+    print("good")
+default:
+    print("wow")
 }
-else if(IntNumber2 > IntNumber1){
-    Temp = (IntNumber1 > IntNumber3) ? IntNumber1 : IntNumber3
-}
-else{
-    Temp = (IntNumber1 > IntNumber2) ? IntNumber1 : IntNumber2
-}
-print(Temp)
