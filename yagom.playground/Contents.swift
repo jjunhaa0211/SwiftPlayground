@@ -477,15 +477,29 @@ import Darwin
 //    }else{
 //        print("\(first) == \(second)")
 //    }
-let SwiftSwitch: Int = 1;
+//let SwiftSwitch: Int = 1;
+//
+//switch(SwiftSwitch){
+//case 1:
+//    print("hello")
+//case 2:
+//    print("hi")
+//case 3:
+//    print("good")
+//default:
+//    print("wow")
+//}
+let interValue: Int = 3
 
-switch(SwiftSwitch){
-case 1:
-    print("hello")
-case 2:
-    print("hi")
-case 3:
-    print("good")
+switch(interValue){
+case 0:
+    print("Value == zero")
+case 1...10:
+    print("Value == zero")
+    fallthrough
+case Int.min..<0, 101..<Int.max:
+    print("Value < 0 or Value > 100")
+    break
 default:
-    print("wow")
+    print("10 < Value <= 1~10")
 }
