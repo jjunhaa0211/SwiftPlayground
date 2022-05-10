@@ -3,6 +3,7 @@
 //print("MY name is \(name)")  //변수나 상수를 집어 넣을 때 c언어는 %d를 쓰지만 swift는 \(변수,상수)를 사용한다
 
 import Foundation
+import Darwin
 
 ///변수
 //var name : String = "yagom"
@@ -433,9 +434,35 @@ import Foundation
 //print("name:\(eric.0),age:\(eric.1),height:\(eric.2)")
 //
 
-var valueA: Int = 3
-var valueB: Int = 5
-var BiggerValue = (valueA > valueB) ? valueA : valueB
-print("\(BiggerValue)")
+//var valueA: Int = 3
+//var valueB: Int = 5
+//var BiggerValue = (valueA > valueB) ? valueA : valueB
+//print("\(BiggerValue)")
 
-
+//let first: Int = 5
+//let second: Int = 7
+//
+//if(first > second){
+//    print("first < second")
+//    } else if(first < second){
+//        print("first < second"){
+//            else {
+//                print
+//            }
+//        }
+//    }
+//}
+let IntNumber1: Int = 2;
+let IntNumber2: Int = 3;
+let IntNumber3: Int = 0;
+var Temp: Int = 0;
+if(IntNumber1 > IntNumber2 ){
+    Temp = (IntNumber2 > IntNumber3) ? IntNumber2 : IntNumber3
+}
+else if(IntNumber2 > IntNumber1){
+    Temp = (IntNumber1 > IntNumber3) ? IntNumber1 : IntNumber3
+}
+else{
+    Temp = (IntNumber1 > IntNumber2) ? IntNumber1 : IntNumber2
+}
+print(Temp)
