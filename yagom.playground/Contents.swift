@@ -489,17 +489,81 @@ import Darwin
 //default:
 //    print("wow")
 //}
-let interValue: Int = 3
+//let interValue: Int = 3
+//
+//switch(interValue){
+//case 0:
+//    print("Value == zero")
+//case 1...10:
+//    print("Value == zero")
+//    fallthrough
+//case Int.min..<0, 101..<Int.max:
+//    print("Value < 0 or Value > 100")
+//    break
+//default:
+//    print("10 < Value <= 1~10")
+//}
 
-switch(interValue){
-case 0:
-    print("Value == zero")
-case 1...10:
-    print("Value == zero")
-    fallthrough
-case Int.min..<0, 101..<Int.max:
-    print("Value < 0 or Value > 100")
-    break
+//let doubleValue: Double = 3.0
+//
+//switch doubleValue {
+//case 0:
+//    print("Value == zero")
+//case 1.5...10.5:
+//    print("1.5 <= Value <= 10.5")
+//default:
+//    print("Value == \(doubleValue)")
+//}
+//let stringValue: String = "Liam Neeson"
+//
+//switch stringValue {
+//case "junha":
+//    print("He is junha")
+//case "Jay":
+//    print("He is Jay")
+//case "Jenny","Joker","Nova":
+//    print("He or She is \(stringValue)")
+//
+//default:
+//    print("\(stringValue) said 'I don't know who you are'")
+//}
+//let stringValue: String = "good"
+//
+//switch stringValue {
+//case "Junha":
+//    print("he is junha")
+//case "Jay":
+//    print("He is Jay");
+//case "Jenny":
+//    fallthrough
+//case "Joker":
+//    fallthrough
+//case "Nova":
+//    print("He or She is \(stringValue)")
+//default:
+//    print("\(stringValue) said 'I don't know who you are.'")
+//}
+//typealias NameAge = (name: String, age: Int)
+//
+//let tupleValue: NameAge = ("junha",99)
+//
+//switch(tupleValue){
+//case ("junha",99):
+//    print("정확히 맞췄습니다!")
+//default:
+//    print("누굴 찾나요?")
+//}
+
+typealias NameAge = (name: String, age: Int)
+
+let tupleValue: NameAge = ("junha",18)
+switch tupleValue {
+case ("junha",17):
+    print("정확히 맞췄습니다!")
+case ("junha",let age):
+    print("이름만 맞았습니다. 나이는 \(age)가 아닙니다")
+case(let name, 17):
+    print("나이는 맞았습니다. 이름은 \(name)님이 아닙니다")
 default:
-    print("10 < Value <= 1~10")
+    print("누굴 찾나요?")
 }
