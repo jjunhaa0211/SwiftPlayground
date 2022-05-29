@@ -554,16 +554,39 @@ import Darwin
 //    print("누굴 찾나요?")
 //}
 
-typealias NameAge = (name: String, age: Int)
+//typealias NameAge = (name: String, age: Int)
+//
+//let tupleValue: NameAge = ("junha",18)
+//switch tupleValue {
+//case ("junha",17):
+//    print("정확히 맞췄습니다!")
+//case ("junha",let age):
+//    print("이름만 맞았습니다. 나이는 \(age)가 아닙니다")
+//case(let name, 17):
+//    print("나이는 맞았습니다. 이름은 \(name)님이 아닙니다")
+//default:
+//    print("누굴 찾나요?")
+//}
 
-let tupleValue: NameAge = ("junha",18)
-switch tupleValue {
-case ("junha",17):
-    print("정확히 맞췄습니다!")
-case ("junha",let age):
-    print("이름만 맞았습니다. 나이는 \(age)가 아닙니다")
-case(let name, 17):
-    print("나이는 맞았습니다. 이름은 \(name)님이 아닙니다")
-default:
-    print("누굴 찾나요?")
-}
+//enum Menu {
+//    case chicken
+//    case pizza
+//}
+//
+//let lunchMenu: Menu = .chicken
+//
+//switch lunchMenu {
+//case .chicken:
+//    print("반반으로 주세요.")
+//case .pizza:
+//    print("핫소스 많이 주세요")
+//case _://case default와 같은 의미 입니다
+//    print("오늘 메뉴가 뭐죠?")
+//}
+//var names: [String] = ["Joker","Jenny","Nova","yagom"]
+//
+//while(names.isEmpty == false)
+//{
+//    print("Good bye \(names.removeFirst())")
+//    //removeFirst() = 요소를 삭제함과 동시에 삭제한 요소를 반환합니다.
+//}
