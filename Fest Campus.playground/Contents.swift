@@ -193,4 +193,47 @@ import UIKit
 //    print(chars, terminator: " ")
 //}
 
+////배열
+//let numberArray = [2,4,6,8,10,12,14]
+//
+//let stringarray = ["Swift","Hello", "World"]
+//
+//var doubleArray: [Double] = [0.1,0.3,0.5]
+//
+//var floatArray = [Float]()
+//
+//var digitCount = Array(repeating: 0, count: 10)
 
+//let numberArray = [2,4,6,8,10,12,14]
+//
+//var floatArray = [Float]()
+//
+//print(numberArray[0],numberArray[3],separator: " ")
+//
+
+//let stnngArray = ["Swift","Hello","World"]
+//
+//for string in stnngArray{
+//    print("\(string)")
+//}
+
+//var someSet = Set<Character>("junhaa")
+//
+//print(someSet.count)
+
+//var someSet = Set<Character>("hello")
+//
+//someSet.insert("c")
+//
+
+//var someSet = Set<Character>()
+//
+//print(someSet.isEmpty)
+
+//var someSet = Set<Character>("good")
+//
+//if someSet.contains("o"){
+//    print("1")
+//} else {
+//    print("2")
+//}
