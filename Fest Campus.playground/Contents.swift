@@ -1,4 +1,5 @@
 import UIKit
+import Security
 
 //var nume = 5
 //nume = 1
@@ -237,3 +238,15 @@ import UIKit
 //} else {
 //    print("2")
 //}
+//////제어문
+//let names = ["Anna","Alex","Brian","Jack"]
+//
+//for name in names {
+//    print("Hello, \(name)")
+//}
+
+//repeat {
+//    statements
+//} while conditon
+
+
