@@ -123,3 +123,74 @@ import UIKit
 //
 //print("START!")
 
+//var totalCount = 18
+//var gemCard = 1
+//var ranArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+//
+//
+//while(totalCount >= 1) {
+//
+//    let randomIndex = Int(arc4random_uniform(UInt32(ranArray.count)))
+//    print(ranArray[randomIndex])
+//
+//    ranArray.remove(at: randomIndex)
+//
+//    totalCount-=1
+//}
+
+//let now = Date().timeIntervalSince1970
+//
+//let date: DateFormatter = {
+//     let df = DateFormatter()
+//     df.locale = Locale(identifier: "ko_KR")
+//     df.timeZone = TimeZone(abbreviation: "KST")
+//     df.dateFormat = "MM"
+//     return df
+// }()
+//let nowDate = Date() // 현재의 Date (ex: 2020-08-13 09:14:48 +0000)
+//let dateFormatter = DateFormatter()
+//dateFormatter.dateFormat = "EE" // 2020-08-13 16:30
+//let str = dateFormatter.string(from: nowDate) // 현재 시간의 Date를 format에 맞춰 string으로 반환
+//print(str)
+
+///문자열
+//let a = "Hello"
+//
+//let b = "World"
+//
+//var strinng = a + b
+//print(strinng)
+
+//let a = "Hello,Swift!"
+//
+//print("\(a),length is \(a.count)")
+//
+//let a = "Hello,Swift!"
+//let b = "Hello,World!"
+//
+//if(a == b){
+//    print("\(a),\(b) are equal")
+//} else {
+//    print("\(a) end \(b) are not eequal")
+//}
+//
+//let a = 1
+//
+//a>0?print("도원준 게이이이"):print("도원준 이성애자")
+
+
+//var gayname1 : String = "도원준"
+//
+//var gayname2 : String = "도원준"
+//
+//var a = 1
+//
+//var b = 0
+//
+//gayname1 === gayname2 ? a : b
+
+//for chars in "ThisString" {
+//    print(chars, terminator: " ")
+//}
+
+
