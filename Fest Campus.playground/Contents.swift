@@ -308,3 +308,23 @@ import Security
 //    a1 = b1
 //    b1 = t
 //}
+enum DaysofaWeek {
+    case sunday,monday,tuesDay,wednesDay,thursDay,friDay,saturDay
+}
+
+var weekDay = DaysofaWeek.sunday
+
+weekDay = .saturDay
+
+switch weekDay {
+case.sunday:
+    print("Today is Sunday")
+case.monday:
+    print("Today is Monday")
+case.tuesDay:
+    print("Today is tuesday")
+case.saturDay:
+    print("Today is saturDay")
+default:
+    print("What day of the week is it?")
+}
