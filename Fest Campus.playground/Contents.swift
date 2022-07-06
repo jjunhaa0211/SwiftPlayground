@@ -248,5 +248,63 @@ import Security
 //repeat {
 //    statements
 //} while conditon
+//func greet(person: String) -> String {
+//    let greeting = "Hello," + person + "!"
+//    return greeting
+//}
 
-
+//func display(no1: Int) -> Int {
+//
+//    let a = no1
+//    return a
+//}
+//
+//print(display(no1: 100))
+//print(display(no1: 200))
+//
+//func sayHelloWorld() -> String {
+//    return "hello, world"
+//}
+//print(sayHelloWorld())
+//func ls(array: [Int]) -> (large: Int,small : Int) {
+//    var lar = array[0]
+//    var sma = array[0]
+//
+//    for i in array[1..<array.count]{
+//        if i < sma {
+//            sma = i
+//        } else if i > lar {
+//            lar = i
+//        }
+//    }
+//
+//    return (lar,sma)
+//}
+//
+//let num = ls(array: [40,12,-5,78,98])
+////print("Largest number is \(num.large) and smallest number is \(num.small)")
+//func sum(a : Int, b : Int) {
+//    let a = a + b
+//    let b = a - b
+//    print(a,b)
+//}
+//
+//sum(a : 20,b: 10)
+//sum(a : 40,b: 10)
+//sum(a : 24,b: 6)
+//func someFunction(firsstParameterName: Int, secondParameterName: Int){
+//
+//}
+//someFunction(firsstParameterName: 1, secondParameterName: 2)
+//func someFunction(argumentLable parameterName : Int) {
+//
+//}
+//func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+//
+//}
+//someFunction(1, secondParameterName: 2)
+//func temp(a1: inout Int, b1: inout Int) {
+//    let t = a1
+//    a1 = b1
+//    b1 = t
+//}
