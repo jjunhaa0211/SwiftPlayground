@@ -308,23 +308,88 @@ import Security
 //    a1 = b1
 //    b1 = t
 //}
-enum DaysofaWeek {
-    case sunday,monday,tuesDay,wednesDay,thursDay,friDay,saturDay
-}
+//enum DaysofaWeek {
+//    case sunday,monday,tuesDay,wednesDay,thursDay,friDay,saturDay
+//}
+//
+//var weekDay = DaysofaWeek.sunday
+//
+//weekDay = .saturDay
+//
+//switch weekDay {
+//case.sunday:
+//    print("Today is Sunday")
+//case.monday:
+//    print("Today is Monday")
+//case.tuesDay:
+//    print("Today is tuesday")
+//case.saturDay:
+//    print("Today is saturDay")
+//default:
+//    print("What day of the week is it?")
+//}
+//enum Student {
+//    case Name(String)
+//    case Mark(Int,Int,Int)
+//}
+//
+//var studDetails = Student.Name("Swift")
+//var studMarks = Student.Mark(98, 97, 95)
+//
+//switch studMarks {
+//case .Name(let studName):
+//    print("Student name is \(studName).")
+//case .Mark(let Mark1, let Mark2,let Mark3):
+//    print("Student Marks are \(Mark1),\(Mark2),\(Mark3)")
+//}
 
-var weekDay = DaysofaWeek.sunday
+import Foundation
+import Security
 
-weekDay = .saturDay
+class KeyChain {
+    // Create
+    class func create(key: String, token: String) {
+        let query: NSDictionary = [
+            kSecClass: kSecClassGenericPassword, // 일반 암호 항목을 나타내는 값입니다
+            kSecAttrAccount: key,   // 저장할 Account
+            kSecValueData: token.data(using: .utf8, allowLossyConversion: false) as Any   // 저장할 Token
+        ]
+        SecItemDelete(query)    // Keychain은 Key값에 중복이 생기면, 저장할 수 없기 때문에 먼저 Delete해줌
 
-switch weekDay {
-case.sunday:
-    print("Today is Sunday")
-case.monday:
-    print("Today is Monday")
-case.tuesDay:
-    print("Today is tuesday")
-case.saturDay:
-    print("Today is saturDay")
-default:
-    print("What day of the week is it?")
+        let status = SecItemAdd(query, nil)
+        assert(status == noErr, "🤬 토큰 저장 불가")
+    }
+    
+    // Read
+    class func read(key: String) -> String? {
+        let query: NSDictionary = [
+            kSecClass: kSecClassGenericPassword, // 일반 암호 항목을 나타내는 값입니다
+            kSecAttrAccount: key,
+            kSecReturnData: kCFBooleanTrue as Any,  // CFData 타입으로 불러오라는 의미
+            kSecMatchLimit: kSecMatchLimitOne       // 중복되는 경우, 하나의 값만 불러오라는 의미
+        ]
+        
+        var dataTypeRef: AnyObject?
+        let status = SecItemCopyMatching(query, &dataTypeRef)
+        
+        if status == errSecSuccess {
+            if let retrievedData: Data = dataTypeRef as? Data {
+                let value = String(data: retrievedData, encoding: String.Encoding.utf8)
+                return value
+            } else { return nil }
+        } else {
+            print("🤯 실패 상태코드 = \(status)")
+            return nil
+        }
+    }
+    
+    // Delete
+    class func delete(key: String) {
+        let query: NSDictionary = [
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrAccount: key
+        ]
+        let status = SecItemDelete(query)
+        assert(status == noErr, "failed to delete the value, status code = \(status)")
+    }
 }
